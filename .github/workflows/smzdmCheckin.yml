@@ -1,15 +1,10 @@
 name: 什么值得买自动签到
 
-# on:
-#   workflow_dispatch:
-#   workflow_run:
-#     workflows: ["Build image"]
-#     types:
-#       - completed
+on:
+  schedule:
+  - cron: 11 12 * * *
+  workflow_dispatch:
 
-  
-schedule:
-  - cron: "31 11 * * *"
 
 jobs:
   run:
