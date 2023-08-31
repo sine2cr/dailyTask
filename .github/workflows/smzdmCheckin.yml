@@ -9,7 +9,7 @@ on:
 
   
   schedule:
-    - cron: "30 11 * * *"
+    - cron: "31 11 * * *"
 
 jobs:
   run:
