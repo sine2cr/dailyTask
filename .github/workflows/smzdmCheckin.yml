@@ -2,7 +2,8 @@ name: 什么值得买自动签到
 
 on:
   schedule:
-  - cron: 11 12 * * *
+  # github默认utc时间，北京时间在原来基础上减8
+  - cron: 11 3  * * *
   workflow_dispatch:
 
 
